@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-    name='GangaGSOC2020',
-    packages=['GangaGSOC2020'],
+    name='gangagsoc',
+    packages=['gangagsoc'],
     version='1.0',
     license='gpl-3.0',
     description='The Challenge for GSoC 2020 student to particpate in the Ganga project',
