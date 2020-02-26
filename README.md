@@ -51,7 +51,7 @@ As stated above everybody should attempt to complete this task
 ## Ganga persistent storage task
 
 1) Demonstrate that you can create a simple database where the server runs on the local machine. Demonstrate that you can read/write tothe database from within python. The database backend has to be an open source solution but otherwise the choice of technology is up to you. Mske sure to provide instructions on how to set up the database.
-2) Now take the Ganga Job object created in the first exercise and store this as a simple blob in the database. You might find the function `full_print(j)` *where `j` is a job object) that is available at the Ganga prompt useful for creating a full string representation of the job. Demonstrate that you can read the blob back and re-create a job object.
+2) Now take the Ganga Job object created in the first exercise and store this as a simple blob in the database. You might find the function `full_print(j)` (where `j` is a job object) that is available at the Ganga prompt useful for creating a full string representation of the job. Demonstrate that you can read the blob back and re-create a job object.
 3) Measure the performance of reading the blob from the database and re-create the job object a thousand times. Measure the time spent reading the blob from the database separately from the time it takes to recreate the job objects. The emphasis should be on that you can measure the times not on optimising how fast it is. 
 
 ## Ganga GUI task
