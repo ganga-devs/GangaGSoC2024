@@ -46,6 +46,7 @@ As stated above everybody should attempt to complete this task
   - Create a job in Ganga that will count the number of occurences of the word "the" in the text of the PDF file. It should be counted whether it is capitalised or not. Make sure not to count other words with the same letters. So "The Ganga project is the best" should have a count of two, while "There is nothing here" should have a count of zero.
   - Using the `ArgSplitter` create subjobs that each will count the occurences for a single page.
   - Create a merger that adds up the number extracted from each page and places the total number into a file.
+  - Create test cases that demonstrate what you have done and that it is working. In the `test` directory you will find an example of a trivial test. All tests can be executed by `python -m unittest discover test "*.py"`, where `test` is the name of the directory. To make test that include Ganga objects, be inspired by tests in `ganga/GangaCore/test/GPI`.
 
 ## Ganga persistent storage task
 
