@@ -7,7 +7,7 @@ setup(
     description='The Challenge for GSoC 2020 student to particpate in the Ganga project',
     author='Ulrik Egede',
     author_email='ulrik.egede@monash.edu',
-    url='https://github.com/ganga-devs/Ganga-GSoC-2020',
+    url='https://github.com/ganga-devs/GangaGSoC2020',
     keywords=['GSoC', 'Ganga', 'Challenge'],
     install_requires=[
           'pytest',
