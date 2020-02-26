@@ -1,1 +1,1 @@
-# Ganga-GSoC-2020
+# Challenge for Ganga projects in GSoC 2020
