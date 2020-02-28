@@ -11,8 +11,8 @@ You are welcome to do all three parts, but if you are only interested in applyin
 ## Setup
 Following the steps below will ensure that you can work freely on your project, can submit code through pushing it to GitHub but at the same time keep it private. Please avoid making your repository public as we want each student to work on this independently.
 
-- Create a fork of this repository which is private in GitHub
-- Give the GitHub users `egede`, `alexanderrichards`, `mesmith75` read access to your repository
+- Create a duplicate of the repository following the instructions at https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository . Then make that duplicate private. Please do not make a normal fork as that will then prevent you from making the repository private.
+- Give the GitHub users `egede`, `alexanderrichards`, `mesmith75` access to your repository as collaborators.
 
 For performing actual work for the challenge, we suggest something like
 
@@ -23,7 +23,7 @@ cd GSoC/
 pip install -e git+https://github.com/YOUR-GITHUB-USERNAME-HERE/GangaGSoC2020#egg=gangagsoc
 ```
 
-Through the dependency, this will install Ganga as well such that you can work with it directly inside the virtualenv.
+Through the dependency, this will install Ganga as well, such that you can work with it directly inside the virtualenv. Please note that while the Ganga code is all python3, there are a few of the wrapper scripts that are still in python2. So you will need to have a working python2 installation available on your system.
 
 Communication is an important part of working in GSoC. Please just ask by email to all/any of the developers about anything that you are in doubt about. 
 
