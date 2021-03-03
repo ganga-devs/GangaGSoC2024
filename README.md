@@ -64,6 +64,6 @@ For this task we will not need to use the Ganga framework at all, you will need 
 
  - Ability to create a simple webserver using a python based web framework of your choosing
  - Have the webserver render dynamic content using a templating engine (e.g. `jinja2`)
- - Modify the server to allow updating of the content either by making it a RESTful service.
+ - Modify the server to allow updating of the content by making it a RESTful service.
 
 (*__Note__ that the content for this task can be anything that you like and we would very much like to see you be as creative as possible with the actual design of the web page. The graphical design forms part of the challenge.*)
