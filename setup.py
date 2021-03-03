@@ -2,12 +2,12 @@ from distutils.core import setup
 setup(
     name='gangagsoc',
     packages=['gangagsoc'],
-    version='1.0',
+    version='2.0',
     license='gpl-3.0',
-    description='The Challenge for GSoC 2020 student to particpate in the Ganga project',
+    description='The Challenge for GSoC 2021 student to particpate in the Ganga project',
     author='Ulrik Egede',
     author_email='ulrik.egede@monash.edu',
-    url='https://github.com/ganga-devs/GangaGSoC2020',
+    url='https://github.com/ganga-devs/GangaGSoC2021',
     keywords=['GSoC', 'Ganga', 'Challenge'],
     install_requires=[
           'pytest',
@@ -21,5 +21,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
 )
