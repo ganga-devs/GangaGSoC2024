@@ -17,10 +17,11 @@ Following the steps below will ensure that you can work freely on your project, 
 For performing actual work for the challenge, we suggest something like
 
 ```bash
-virtualenv -p python3 GSoC
+python3 -m venv GSoC
 cd GSoC/
 . bin/activate
-pip install -e git+https://github.com/YOUR-GITHUB-USERNAME-HERE/GangaGSoC2021#egg=gangagsoc
+python -m pip install --upgrade pip wheel
+python -m pip install -e git+https://github.com/YOUR-GITHUB-USERNAME-HERE/GangaGSoC2021#egg=gangagsoc
 ```
 
 Through the dependency, this will install Ganga as well, such that you can work with it directly inside the virtualenv. Please note that while the Ganga code is all python3, there are a few of the wrapper scripts that are still in python2. So you will need to have a working python2 installation available on your system. Also note that Ganga will only work on linux/unix like systems.
