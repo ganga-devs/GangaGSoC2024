@@ -32,7 +32,7 @@ Communication is an important part of working in GSoC. Please just ask by email 
 
 To complete the challenge you should push everything to the main branch of your forked repository. Then please send an email to us that you have finished. In the repository, we expect
 - That the `setup.py` file is updated with any extra `python` package dependencies that you may have introduced.
-- That there is a file `PROJECT.md` that documents what you have done and how we can test it.
+- That there is a file `PROJECT.md` that documents what you have done and how we can test it. If you perform the GUI task below, make sure to include some images or short screen grabbed movies that illustrate the functionality.
 - That you have implemented tests of the code that can be tested with `pytest` to illustrate that everything works as expected. Tests should be placed in the directory `test` and have self-explaining names.
 - That anything (like interaction with GUI), that can not easily be made to work with `pytest` is fully explained.
 
