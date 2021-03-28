@@ -52,7 +52,7 @@ As stated above everybody should attempt to complete this task
 
 ## Submission handling
 
-1) Using docker, set up (a) virtual server(s) that can host an `HTCondor` batch sytem. Be inspired by the [HTCondor QuickStart guide](https://htcondor.readthedocs.io/en/latest/admin-manual/quick-start-condor-pool.html).
+1) Using docker, set up (a) virtual server(s) that can host an `HTCondor` batch sytem. Be inspired by the [HTCondor QuickStart guide](https://htcondor.readthedocs.io/en/latest/getting-htcondor/admin-quick-start.html).
 2) Demonstrate that you can submit jobs from the command line of the host machine to this batch system.
 3) Show that you can submit jobs from Ganga to this batch system using the `Condor` backend.
 4) Develop a way to measure the average time it takes for Ganga to submit the job to Condor, the time it takes for Condor to start the job if the batch queue is empty and the time it takes before Ganga discover that the job has finished. The `time` attribute of completed jobs might be useful for this. 
