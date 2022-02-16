@@ -32,7 +32,7 @@ Communication is an important part of working in GSoC. We use the CERN Mattermos
 - When you have joined the Ganga Team, please join the [GSoC2022 channel](https://mattermost.web.cern.ch/ganga/channels/gsoc2022).
 - Introduce yourself with a few words to the channel.
 
-It is by far the best if most communication is public in the MatterMost channel, but you can also instant message Ulrik (@egede) for more specific issues. Please do not post solutions to the challenge to the channel but you are welcome to discuss issues regarding the challenge.
+It is by far the best if most communication is public in the MatterMost channel, but you can also instant message @egede, @masmith and @arichard for more specific issues. Please do not post solutions to the challenge to the public channel but you are welcome to discuss issues regarding the challenge.
 
 ## Completing challenge
 
@@ -63,3 +63,6 @@ The purpose of this challenge is to demonstrate that you understand how to imple
 2) Update the code to use three solutions for the monitoring using asyncio, a ThreadPool and a MultiProcess pool respectively. The use of the Python package [aiofile](https://pypi.org/project/aiofile/) or similar might prove useful. Provide timing information for each of your solutions.
 3) When monitoring jobs running on remote servers, the update of the status is often i/o bound. Try to emulate such an i/o bound checking of the status and research how that affects the timing of your different solutions.
 4) Implement test cases as in the first challenge that demonstrates that your code is working.
+
+## Submission of challenges
+You are welcome to seek feedback on your solution to the challenges while they are still work in progress. To do this and for your final submission, you should PM @egede, @masmith and @arichard in MatterMost. Make sure that you have given access in Github to us as directed above.
