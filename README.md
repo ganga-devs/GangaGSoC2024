@@ -39,7 +39,7 @@ It is by far the best if most communication is public in the MatterMost channel,
 To complete the challenge you should push everything to the main branch of your forked repository. Then please send an email to us that you have finished. In the repository, we expect
 - That the [setup.py](setup.py) file is updated with any extra `python` package dependencies that you may have introduced.
 - Update the file [PROJECT.md](PROJECT.md) to documents what you have done and how we can test it. You can also include images or short screen grabbed movies that illustrate functionality.
-- Add a file CV.pdf that cotains your CV.
+- Add a file CV.pdf that contains your CV.
 - That you have implemented tests of the code that can be tested with running `python -m unittest` to illustrate that everything works as expected. Tests should be placed in the directory `test` and have self-explaining names.
 
 ## Ganga initial task
