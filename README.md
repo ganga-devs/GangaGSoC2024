@@ -36,7 +36,7 @@ It is by far the best if most communication is public in the MatterMost channel,
 
 ## Completing challenge
 
-To complete the challenge you should push everything to the main branch of your forked repository. Then please send an email to us that you have finished. In the repository, we expect
+To complete the challenge you should push everything to the main branch of your forked repository. In the repository, we expect
 - That the [setup.py](setup.py) file is updated with any extra `python` package dependencies that you may have introduced.
 - Update the file [PROJECT.md](PROJECT.md) to documents what you have done and how we can test it. You can also include images or short screen grabbed movies that illustrate functionality.
 - Add a file CV.pdf that contains your CV.
@@ -64,5 +64,8 @@ The purpose of this challenge is to demonstrate that you understand how to imple
 3) When monitoring jobs running on remote servers, the update of the status is often i/o bound. Try to emulate such an i/o bound checking of the status and research how that affects the timing of your different solutions.
 4) Implement test cases as in the first challenge that demonstrates that your code is working.
 
-## Submission of challenges
-You are welcome to seek feedback on your solution to the challenges while they are still work in progress. To do this and for your final submission, you should PM @egede, @masmith and @arichard in MatterMost. Make sure that you have given access in Github to us as directed above.
+## Feedback on challenge
+You are welcome to seek feedback on your solution to the challenges while they are still work in progress. For feedback PM @egede, @masmith and @arichard in MatterMost. Make sure that you have given access in Github to us as directed above.
+
+## Submission
+When you are ready to submit, then please use the [Google form](https://forms.gle/YppQDVPTRqrJUhZS7) to let us know.
