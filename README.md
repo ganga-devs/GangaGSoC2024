@@ -40,7 +40,7 @@ To complete the challenge you should push everything to the main branch of your 
 - That the [setup.py](setup.py) file is updated with any extra `python` package dependencies that you may have introduced.
 - Update the file [PROJECT.md](PROJECT.md) to document what you have done and how we can test it. You can also include images or short screen grabbed movies that illustrate functionality.
 - Add a file CV.pdf that contains your CV.
-- That you have implemented tests of the code that can be tested with running `python -m unittest` to illustrate that everything works as expected. Tests should be placed in the directory `test` and have self-explaining names.
+- That you have implemented tests of the code that can be tested with running `python -m pytest` to illustrate that everything works as expected. Tests should be placed in the directory `test` and have self-explaining names.
 
 ## Ganga initial task
 
