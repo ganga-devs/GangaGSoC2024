@@ -26,5 +26,6 @@ jobs:
       - name: Test with pytest
         run: |
           . ~/venv/bin/activate
-          cd GangaGSoC2024
+          ls
+          ls ~
           python -m pytest gangagsoc/test
