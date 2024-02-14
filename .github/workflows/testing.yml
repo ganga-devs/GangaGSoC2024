@@ -1,0 +1,29 @@
+name: Testing workflow
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+jobs:
+  core-unit:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.11
+      - name: Install dependencies
+        run: |
+          python -m venv ~/venv
+          . ~/venv/bin/activate
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -e .
+      - name: Test with pytest
+        run: |
+          . ~/venv/bin/activate
+          python -m pytest gangagsoc/test
