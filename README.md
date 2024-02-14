@@ -1,10 +1,10 @@
-# Challenge for Ganga projects in GSoC 2023
+# Challenge for Ganga projects in GSoC 2024
 
 The challenge that forms part of the Ganga projects in GSoC is divided up into two pieces.
 
 1) A part that demonstrates a basic proficiency in Ganga and the ability to work with Python
-2) A part the demonstrates how you can work with the tools required for interfacing Ganga with external code
-
+2) Demonstration that you can integrate communication with an LLM from inside a python script.
+   
 ## Setup
 Following the steps below will ensure that you can work freely on your project, can submit code through pushing it to GitHub but at the same time keep it private. Please avoid making your repository public as we want each student to work on this independently.
 
@@ -18,7 +18,7 @@ python3 -m venv GSoC
 cd GSoC/
 . bin/activate
 python -m pip install --upgrade pip wheel setuptools
-python -m pip install -e git+https://github.com/YOUR-GITHUB-USERNAME-HERE/GangaGSoC2023#egg=gangagsoc
+python -m pip install -e git+https://github.com/YOUR-GITHUB-USERNAME-HERE/GangaGSoC2024#egg=gangagsoc
 ```
 
 Through the dependency, this will install Ganga as well, such that you can work with it directly inside the virtualenv.
@@ -29,7 +29,7 @@ Communication is an important part of working in GSoC. We use the CERN Mattermos
 - Create a CERN external account by following the [instructions](https://account.cern.ch/account/externals/)
 - Follow [the link](https://mattermost.web.cern.ch/signup_user_complete/?id=6t4p1zptyp8pdn6ptore9ex9hw) to
   join the Ganga Team in MatterMost. You can install MatterMost as an application, or you can just use it inside your browser.
-- When you have joined the Ganga Team, please join the [GSoC2023 channel](https://mattermost.web.cern.ch/ganga/channels/gsoc2023).
+- When you have joined the Ganga Team, please join the [GSoC2024 channel](https://mattermost.web.cern.ch/ganga/channels/gsoc2024).
 - Introduce yourself with a few words to the channel.
 
 It is by far the best if most communication is public in the MatterMost channel, but you can also instant message @egede, @masmith and @arichard for more specific issues. Please do not post solutions to the challenge to the public channel but you are welcome to discuss issues regarding the challenge.
@@ -57,11 +57,12 @@ Start by performing this task.
 
 ## Interfacing Ganga
 
-The purpose of this challenge is to illustrate that you can think about what it will require to interface Ganga and the Snakemake system. 
+The purpose of this challenge is to demonstrate that you can communicate with a Large Language Model in a programmatic way. Which LLM you use is for you to decide and the performance of the LLM itself (in terms of the quality of the replies) is irrelevant.
 
-1) Install [Snakemake](https://snakemake.readthedocs.io/) by making it a dependency of your GSoC project. Once installed, you might want to work yourself through the [short tutorial](https://snakemake.readthedocs.io/en/stable/tutorial/short.html) to get the general idea of how it works.
-2) Write a `Snakefile` that will execute your ganga job that you used for counting words above. The `input` to your `rule all` should be the file that your script writes with the number of words. Remember that you can execute a script in Ganga from the shell as `ganga script.py`. You probably want to use `sleep_until_completed` again to make your script block the execution flow until the Ganga job has finished.
-3) Try to implement a solution where you are not using `sleep_until_completed` and the script starting the Ganga job is simply starting it but finish without producing the output file. This should make `snakemake` fail as the output is not produced. Now implement a way such that you can run `snakemake` a bit later. If the Ganga job has not finished yet, Snakemake should not start a new Ganga job, but simply fail again. If on the other hand the Ganga job has finished, snakemake should carry on as the output is now produced. You might need to introduce some artificial delay in your Ganga job to test this. This last bit might seems artificial but it is not unusual that Ganga jobs can take many hours or indeed days to finish.
+1) Create code that sets up a conversation with an LLM of your choice.
+2) Craft a set of questions to the LLM that will make it write code that can execute a job in Ganga that will calculate an approximation to the number pi using an accept-reject simulation method will one million simulations. The job should be split into a number of subjobs that each do thousand simulations.
+3) Write a test that executes the proposed code. The test should succeed if the test tries to execute the code in Ganga. It doesn't matter if the code proposed by the LLM works.
+
 
 ## Feedback on challenge
 You are welcome to seek feedback on your solution to the challenges while they are still work in progress. For feedback PM @egede, @masmith and @arichard in MatterMost. Make sure that you have given access in Github to us as directed above.
