@@ -54,6 +54,7 @@ Start by performing this task.
   - Using the `ArgSplitter` create subjobs that each will count the occurences for a single page.
   - Create a merger that adds up the number extracted from each page and places the total number into a file.
  3) Create test cases that demonstrate what you have done and that it is working. In the `test` directory you will find an example of a trivial test. All tests can be executed by `python -m unittest` when executed from the `gangagsoc` directory. To make tests that include Ganga objects, be inspired by tests in [existing tests](https://github.com/ganga-devs/ganga/blob/develop/ganga/GangaCore/test/GPI/TestArgSplitter.py). Note the use of `sleep_until_completed`.
+ 4) Confirm that your new tests are running successfully within the defined GitHub action. Click on "Actions" in the web interface of your repository. The tests will run each time you push a file to the "main" branch.
 
 ## Interfacing Ganga
 
